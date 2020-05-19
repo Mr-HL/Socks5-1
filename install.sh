@@ -87,7 +87,7 @@ Download()
 echo ""
 echo "下载Socks5服务中..."
 cd  /root
-git clone https://github.com/Mr-HL/Socks5-1
+git clone https://github.com/wyx176/Socks5
 }
 
 
