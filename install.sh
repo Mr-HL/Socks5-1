@@ -87,7 +87,7 @@ Download()
 echo ""
 echo "下载Socks5服务中..."
 cd  /root
-git clone https://github.com/wyx176/Socks5
+git clone https://github.com/Mr-HL/Socks5-1
 }
 
 
@@ -96,11 +96,11 @@ InstallSock5()
 {
 echo ""
 echo "解压文件中..."
-cd  /root/Socks5
+cd  /root/Socks5-1
 tar zxvf ./ss5-3.8.9-8.tar.gz
 
 echo "安装中..."
-cd /root/Socks5/ss5-3.8.9
+cd /root/Socks5-1/ss5-3.8.9
 ./configure
 make
 make install
@@ -110,11 +110,11 @@ make install
 InstallPanel()
 {
 #cd  /root/Socks5
-mv /root/Socks5/service.sh /etc/opt/ss5/
-mv /root/Socks5/user.sh /etc/opt/ss5/
-mv /root/Socks5/version.txt /etc/opt/ss5/
-mv /root/Socks5/ss5 /etc/sysconfig/
-mv /root/Socks5/s5 /usr/local/bin/
+mv /root/Socks5-1/service.sh /etc/opt/ss5/
+mv /root/Socks5-1/user.sh /etc/opt/ss5/
+mv /root/Socks5-1/version.txt /etc/opt/ss5/
+mv /root/Socks5-1/ss5 /etc/sysconfig/
+mv /root/Socks5-1/s5 /usr/local/bin/
 chmod +x /usr/local/bin/s5
 
 #设置默认用户名、默认开启帐号验证
@@ -148,7 +148,7 @@ fi
 #5.检测是否安装完整
 check(){
 cd /root
-rm -rf /root/Socks5
+rm -rf /root/Socks5-1
 rm -rf /root/install.sh
 errorMsg=""
 isError=false
